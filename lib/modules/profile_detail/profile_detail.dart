@@ -24,11 +24,35 @@ class _ProfileDetailState extends State<ProfileDetail> {
             height: 16,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 16,
             ),
             child: Row(
-              
+              children: [
+                GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.withAlpha(100),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Icon(
+                      Icons.chevron_left_rounded,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 8,
+                ),
+                const Text(
+                  "Profile Detail",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
