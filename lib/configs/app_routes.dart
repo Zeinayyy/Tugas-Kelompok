@@ -19,7 +19,7 @@ class AppRoutes {
     );
   }
 
-  static Page _ProfileScreenBuilder(BuildContext context, GoRouterState state) {
+  static Page _profileScreenBuilder(BuildContext context, GoRouterState state) {
   late User user;
   if(state.extra != null && state.extra is User) {
     user = state.extra as User ;
@@ -69,7 +69,7 @@ class AppRoutes {
            GoRoute(
             name: profileDetail,
             path: "profile-detail",
-            pageBuilder: _ProfileScreenBuilder,
+            pageBuilder: _profileScreenBuilder,
           ),
         ],
       ),
