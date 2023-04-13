@@ -20,25 +20,23 @@ class AppRoutes {
   }
 
   static Page _profileScreenBuilder(BuildContext context, GoRouterState state) {
-  late User user;
-  if(state.extra != null && state.extra is User) {
-    user = state.extra as User ;
-  } else {
-    user = User.dummy();
-  }
-  return  MaterialPage(child: ProfileDetail(user: user));
+    late User user;
+    if (state.extra != null && state.extra is User) {
+      user = state.extra as User;
+    } else {
+      user = User.dummy();
+    }
+    return MaterialPage(child: ProfileDetail(user: user));
   }
 
   static Page _homeScreenBuilder(BuildContext context, GoRouterState state) {
     late User user;
-  if(state.extra != null && state.extra is User) {
-    user = state.extra as User ;
-  } else {
-    user = User.dummy();
-  }
-    return MaterialPage(
-      child: HomeScreen(user: user)
-    );
+    if (state.extra != null && state.extra is User) {
+      user = state.extra as User;
+    } else {
+      user = User.dummy();
+    }
+    return MaterialPage(child: HomeScreen(user: user));
   }
 
   static Page _newsDetailScreenBuilder(
@@ -69,7 +67,7 @@ class AppRoutes {
             path: "news-detail:id",
             pageBuilder: _newsDetailScreenBuilder,
           ),
-           GoRoute(
+          GoRoute(
             name: profileDetail,
             path: "profile-detail",
             pageBuilder: _profileScreenBuilder,

@@ -4,22 +4,55 @@ List<News> newslist = [
   News(
       id: 12345,
       deskripsi:
-          "Nam Joo Hyuk sudah masuk wajib militer sejak 20 Maret lalu. Aktor kelahiran tahun 1994 itu dijadwalkan menjalani pelatihan tentara selama lima minggu sebelum dipindahkan ke kantornya sebagai bagian dari kepolisian militer. Baru-baru ini, potret Joo Hyuk ketika berseragam militer diunggah ke media sosial. Bintang drama 'Start-Up' itu tampak berdiri di pojok bersama dengan prajurit lainnya yang kemungkinan juga sedang wamil.",
-      gambar: "asset/peak.jpg",
-      judul:
-          "Nam Joo Hyuk Sebelum Wamil Telah Menyelesaikan Syuting 'Vigilante' Yang Akan Dirilis Oleh Disney+. Sang Aktor Berperan Sebagai Mahasiswa Polisi Yang Memburu Penjahat"),
+          "gunung ini pertama kali didaki oleh seorang yang berkebangsaan Prusia-Jerman bernama Frans Junghun pada tahun 1837. Pada saat ini, Junghun memasukkan Gunung Guntur kedalam golongan gunung api paling aktif di Jawa. Gunung Guntur adalah sebuah gunung bertipe stratovolcano yang berada di ketinggian 1.249 mdpl.",
+      gambar: "aset/guntur2.jpg",
+      judul: "Gunung Guntur Garut Jawa Barat"),
   News(
       id: 12435,
       deskripsi:
-          "V BTS baru-baru ini menunjukkan musik barunya kepada para penggemar. Seperti diketahui, kini hanya tinggal Kim Taehyung dan Jungkook member yang belum merilis album solonya sejak BTS memutuskan fokus pada aktivitas individu. Pada Rabu (12/4) dini hari, V melakukan live di Weverse untuk berkomunikasi dengan penggemar. Selama live, penyanyi kelahiran 1995 itu tak hanya bicara soal rekomendasi musik dari Jungkook melainkan juga memperkenalkan 'Maybe'.",
-      gambar: "asset/taehyung.jpg",
-      judul:
-          "Dalam Live Terbaru Di Weverse, V BTS Memperkenalkan Lagu Buatannya Sendiri. Nuansa Ademnya Bikin Jatuh Cinta, Rupanya Kim Taehyung Baru Akan Merilisnya 10 Tahun Yang Akan Datang."),
+          "Puncak Darajat Pass salah satu destinasi wisata alam yang populer di Garut, Jawa Barat. Tempat wisata yang menawarkan pesona keindahan kota Garut dari ketinggian, kolam air panas, waterpark dan fasilitas outbound yang membuat liburan Anda lebih berkesan.",
+      gambar: "aset/darajat.jpg",
+      judul: "Wisata Darajat Pass Garut Jawa Barat."),
   News(
       id: 12323,
       deskripsi:
-          "Beberapa waktu lalu, program 'Peak Time' telah kehilangan Team 23:00 yang memutuskan mundur. Menjadi pusat kontroversi, Karam akhirnya buka suara membicarakan tentang kejadian baru-baru ini. Pada Kamis (13/4), Karam Team 23:00 menyampaikan perasaannya melalui postingan di Instagram pribadi. Dalam kesempatan itu, mantan member DGNA tersebut juga memberikan penjelasan tentang kontroversi yang menimpanya.",
-      gambar: "asset/peak.jpg",
-      judul:
-          "Mundur Dari 'Peak Time', Karam Jelaskan Soal Foto Lawas Termasuk Bareng Bintang AV"),
+          "Pantai ini merupakan bagian dari pantai selatan Jawa dan berhadapan langsung dengan Samudera Hindia. Ombaknya termasuk besar sehingga Sweet Couple harus berhati-hati saat berwisata di sini. Selalu ikuti aturan yang ada saat berkunjung.",
+      gambar: "aset/pantai.jpeg",
+      judul: "Destinasi Wisata Pantai Garut Selatan Wese Java"),
+  News(
+      id: 12345,
+      deskripsi:
+          "Curug Sanghyang memiliki ketinggian 100 meter dan menjadi idola traveler milenial untuk berswafoto. Curug ini semakin terlihat menawan karena berada di antara perbukitan yang hijau dan dua buah air terjun yang mengalir langsung bersamaan. Menariknya, curug yang kerap berkabut ini memiliki kisah mistis dan menjadi daya tarik tersendiri bagi wisatawan.",
+      gambar: "aset/sangiang.jpg",
+      judul: "Segarnya Air Terjun Sanghyang Taraje di Garut"),
+  News(
+      id: 12435,
+      deskripsi:
+          "Kebun teh Dayeuhmanggung merupakan salah satu kebun teh peninggalan kolonial Belanda. Di kawasan ini terdapat bangunan-bangunan tua dengan arsitektur khas yang diperkirakan sudah ada sejak tahun 1913. Lokasinya berada di Jalan Raya Garut Tasik, Kecamatan Cilawu, Kabupaten Garut.",
+      gambar: "aset/teh.jpg",
+      judul: "Kebun teh Dayeuhmanggung."),
+  News(
+      id: 12323,
+      deskripsi:
+          "Gunung Cikuray Garut merupakan salah satu tujuan favorit para pendaki di Indonesia, bahkan mancanegara. Lokasinya yang sudah terkenal menjadikan siapa pun ingin mendaki gunung ini. Apalagi, berbagai fasilitas sudah tersedia, sehingga lebih aman untuk mendaki.",
+      gambar: "aset/cikuray.png",
+      judul: "Wisata Hiking Gunung Cikuray Garut"),
+  News(
+      id: 12345,
+      deskripsi:
+          "Nikmati pengalaman berendam di sumber air panas alami sembari dikelilingi pemandangan rimbun dan asri pegunungan Jawa Barat di Sabda Alam Hotel & Resort. Menjadi destinasi wisata kota Garut yang hanya berjarak 3 kilometer dari pusat kota, Sabda Alam Hotel & Resort menyajikan pelayanan yang hangat untuk Anda dan keluarga selama menghabiskan waktu di tempat kami.",
+      gambar: "aset/sabda.jpg",
+      judul: "Wisata Air Panas Sabda Alam"),
+  News(
+      id: 12435,
+      deskripsi:
+          "Wisata edukasi yang sangat cocok untuk berlibur dengan keluarga. Terletak di Garut De Wisdom atau disebut juga Coger De Wisdom, mampu menarik wisatawan dalam negeri dan mancanegara. De Wisdom merupakan tempat yang instagramable sekali, karena banyak spot foto menarik. Berada di ketinggian, sehingga pemandangan alam yang terlihat sangat indah, anda juga dapat melihat Gunung Putri, Gunung Guntur, hingga Gunung Cikuray.",
+      gambar: "aset/wisdom.jpg",
+      judul: "Wisdom Garut."),
+  News(
+      id: 12323,
+      deskripsi:
+          "Talaga Bodas merupakan sebuah gunung api tua. Menurut bahasa setempat, nama tempat ini berarti telaga putih. Tak salah memang, karena di bagian puncaknya terdapat sebuah danau dengan air yang nampak berwarna putih. Hampir mirip dengan objek wisata Bandung yang sangat populer yaitu Kawah Putih Ciwidey.",
+      gambar: "aset/talaga.jpg",
+      judul: "Talaga Bodas Garut, Danau Indah di Puncak Gunung"),
 ];

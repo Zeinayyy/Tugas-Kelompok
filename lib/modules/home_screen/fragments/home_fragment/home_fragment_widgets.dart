@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pertemuan_v/configs/app_routes.dart';
+import 'package:pertemuan_v/data/news_data.dart';
+import 'package:pertemuan_v/models/news.dart';
 
 import '../../../../models/user.dart';
 
@@ -35,8 +37,11 @@ class HomeFragmentWidget {
     );
   }
 
-  static latestNewsCard(Size size, int i) {
-    return LatestNewsCard(size: size, i: i);
+  static latestNewsCard(Size size, int i, News news) {
+    return LatestNewsCard(
+      size: size,
+      news: news,
+    );
   }
 
   static latestNewsSection(Size size) {
@@ -200,14 +205,14 @@ class HotestNewsCard extends StatelessWidget {
 }
 
 class LatestNewsCard extends StatelessWidget {
-  const LatestNewsCard({
+  LatestNewsCard({
     super.key,
     required this.size,
-    required this.i,
+    required this.news,
   });
 
   final Size size;
-  final int i;
+  News news;
 
   @override
   Widget build(BuildContext context) {
@@ -230,9 +235,6 @@ class LatestNewsCard extends StatelessWidget {
             onTap: () {
               GoRouter.of(context).goNamed(
                 AppRoutes.newsDetail,
-                params: {
-                  "id": i.toString(),
-                },
               );
             },
             child: Row(
@@ -246,8 +248,8 @@ class LatestNewsCard extends StatelessWidget {
                     ),
                     child: AspectRatio(
                       aspectRatio: 1 / 1,
-                      child: Image.network(
-                        "https://picsum.photos/200",
+                      child: Image.asset(
+                        news.gambar,
                       ),
                     ),
                   ),
@@ -256,7 +258,7 @@ class LatestNewsCard extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "${i + 1}. Laboris fugiat eiusmod consequat aliqua eiusmod.",
+                      news.judul,
                     ),
                   ),
                 ),
@@ -283,14 +285,12 @@ class LatestNewsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        for (int i = 0; i < 10; i++)
-          LatestNewsCard(
-            size: size,
-            i: i,
-          ),
-      ],
-    );
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: newslist
+            .map((e) => LatestNewsCard(
+                  size: size,
+                  news: e,
+                ))
+            .toList());
   }
 }
