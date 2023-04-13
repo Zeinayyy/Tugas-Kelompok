@@ -30,11 +30,14 @@ class AppRoutes {
   }
 
   static Page _homeScreenBuilder(BuildContext context, GoRouterState state) {
-
+    late User user;
+  if(state.extra != null && state.extra is User) {
+    user = state.extra as User ;
+  } else {
+    user = User.dummy();
+  }
     return MaterialPage(
-      child: HomeScreen(
-
-      ),
+      child: HomeScreen(user: user)
     );
   }
 
